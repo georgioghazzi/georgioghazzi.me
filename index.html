@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loading..</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/text-cursor.css">
+</head>
+
+<body>
+
+  <div class="shell-wrap">
+  <p class="shell-top-bar">georgioghazzi@ubuntu:~</p>
+  <ul class="shell-body">
+  <p id="line1" class="hidden">Hi There!</p>
+  <p id="line2" class="hidden">Please Hold On as we clone the website!</p>
+  <p id="line3" class="hidden">Git Clone https://github.com/georgioghazzi/georgioghazzi.git</p>
+  <p id="line4" class="hidden">Clonning into 'georgioghazzi'<br>
+  remote : Counting Objects : 73 done.<br>
+  remote: Compressing Objects: 100%(52/52),done.<br>
+  packing objects: <span class="counter" id = "counter" ></span>
+  </p>
+  <p id="line5" class="hidden">Done.</p>
+  <p id="line6" class="hidden">.....</p>
+  <p id="cursor-line" class="visible">&gt;&gt; <span class="typed-cursor">&#9608;</span></p>
+  </div>
+  <div class="loader">
+  <div class='circle'></div>
+  <div class='circle'></div>
+  <div class='circle'></div>
+  <div class='circle'></div>
+  <div class='circle'></div>
+</div>
+  <script type="text/javascript" src="assets/js/typing.js"></script>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+    function count(){
+    var count = 0;
+    var counting = setInterval(function(){
+        if(count < 101) {
+            $('.counter').text(count + '%');
+            
+            count++
+        } else {
+            clearInterval(counting)
+        }
+    }, 20);
+    }
+     setTimeout(count, 7000)
+},5000);
+
+
+</script>
+</html>
