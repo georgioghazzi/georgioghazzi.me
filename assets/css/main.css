@@ -1712,11 +1712,24 @@
 		}
 
 /* Image */
-	
+	#hidden{
+	position: absolute;
+	display: none;
+	left:22%;
+	top:27%;
+	}
 	.image {
+
 		display: inline-block;
 		border: 0;
 
+	}
+	#img:hover + #hidden{
+		
+		display: inline-block;
+	}
+	#img:hover{
+		filter: blur(1px);
 	}
 	
 		.image img {
@@ -1985,6 +1998,7 @@
 	.item {
 		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
 		margin-bottom: 40px;
+		position: relative;
 		display: block;
 		
 	}
