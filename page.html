@@ -1,5 +1,11 @@
 <!DOCTYPE HTML>
-
+<script type="text/javascript">
+<!--
+if (screen.width <= 699) {
+document.location = "page.html";
+}
+//-->
+</script>
 <html>
 	<head>
 		<title>Georgio Ghazzi</title>
@@ -104,7 +110,7 @@
 								<h2>About Me</h2>
 							</header>
 							<div class="about">
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							<a href="" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
 
 							<p>My name is Georgio Ghazzi and i am a full-stack Web Developper and Software Developper , currently living in Lebanon.
 							Currently Studying Computer Science in <a href="http://aku.edu.lb">AKU</a>.
@@ -126,52 +132,48 @@
 							<div class="row">
 								<div class="4u 12u$(mobile)">
 									<article class="item">
+										 <div class="hovereffect">
 										<a href="#" class="image fit" id="img"><img src="images/pic02.jpg" alt="" /></a>										
-											<a href="#contact" id="hidden" class="button scrolly">Contact Me!</a>
-
+											 <div class="overlay">
+									            <a href="#contact" class=" info scrolly">Contact Me!</a>
+									        </div>
+									    </div>
 										<header>
 											<h3>Chicken DB Program - C#</h3>
 										</header>
 									</article>
-									<article class="item">
-										<a href="#" class="image fit" id="img"><img src="images/pic03.jpg" alt="" /></a>
-										<a href="www.georgioghazzi.me/DWP/Index.php" id="hidden" class="button scrolly">Visit!</a>
-
-										<header>
-											<h3>DWP - PHP</h3>
-										</header>
-									</article>
+									
 								</div>
 								<div class="4u 12u$(mobile)">
 									<article class="item">
+										<div class="hovereffect">
 										<a href="#" class="image fit" id="img"><img src="images/pic04.jpg" alt="" /></a>
+										 <div class="overlay">
+									            <a href="#contact" class=" info scrolly">Contact Me!</a>
+									        </div>
+									    </div>
 										<header>
 											<h3>GeoTheBlogger - NodeJs-MongoDB</h3>
 											<small><em>Currently Unavailable</em></small>
 										</header>
 									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
-										</header>
-									</article>
+									
 								</div>
-								<div class="4u$ 12u$(mobile)">
+								<div class="4u 12u$(mobile)">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+										<div class="hovereffect">
+										<a href="#" class="image fit" id="img"><img src="images/pic03.jpg" alt="" /></a>
+										 <div class="overlay">
+									            <a href="#contact" class=" info scrolly">Contact Me!</a>
+									        </div>
+									    </div>
+
 										<header>
-											<h3>Dolor Penatibus</h3>
+											<h3>DWP - PHP</h3>
 										</header>
 									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>Orci Convallis</h3>
-										</header>
-									</article>
-								</div>
 							</div>
+						</div>
 
 						</div>
 					</section>
@@ -189,15 +191,15 @@
 							I'm currently accepting new projects and would love to hear about yours.<br>
 							Please take a few minutes to tell me about it.</p>
 
-							<form method="post" action="#">
+							<form name="sentMessage" id="contactForm" novalidate>
 								<div class="row">
-									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="6u 12u$(mobile)"><input type="text" id="name" placeholder="Name" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" id="email" placeholder="Email" /></div>
 									<div class="12u$">
-										<textarea name="message" placeholder="Message"></textarea>
+										<textarea id="message" placeholder="Message"></textarea>
 									</div>
 									<div class="12u$">
-										<input type="submit" value="Send Message" />
+										<input type="submit" id="sendMessageButton" value="Send Message" />
 									</div>
 								</div>
 							</form>
@@ -212,7 +214,7 @@
 
 				<!-- Copyright -->
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>Copyright © Georgio Ghazzi 2018</li><li><small><em>Design: <a href="http://html5up.net">HTML5 UP</a></li></em></small>
 					</ul>
 
 			</div>
@@ -225,6 +227,7 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/mail.js"></script>
 
 	</body>
 
