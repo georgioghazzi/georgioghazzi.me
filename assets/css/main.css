@@ -2018,6 +2018,7 @@
 
 
 
+
 /*hover effect*/
 	.hovereffect {
   width: 100%;
@@ -2036,7 +2037,7 @@
   overflow: hidden;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,.5);
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transform: translate(460px, -100px) rotate(180deg);
@@ -2061,12 +2062,11 @@
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000;
   border-radius: 0.35em;
-  color: #fff !important;
+  color: #000 !important;
   text-decoration: none;
   padding: 0.5em 1.5em 0.5em 1.5em;
-  background-color:#333333;
+  background-color:#f0f0f0;
   border: 0;
   margin: 20% 0;
   -webkit-transform: translateY(-200px);
