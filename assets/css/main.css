@@ -2849,6 +2849,7 @@ animation: jiggle 2s  ease-in;
 }
 
 /* SKILLS */
+
 .SkillsLeft{
 	float: left;
 	margin-left:2px;
@@ -2889,7 +2890,7 @@ animation: jiggle 2s  ease-in;
 	position:absolute;
 	top:0;
 	left:0;
-width:110px;
+	width:110px;
 	font-weight:bold;
 	font-size:13px;
 	color:#ffffff;
@@ -2918,9 +2919,9 @@ width:110px;
 
 .skillbar-bar {
 	height:35px;
-	width:0px;
-	background-color:red;
-	border-radius:3px;
+	width:0;
+	line-height: 35px;
+	border-radius:3px 0 0 3px;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
 }
