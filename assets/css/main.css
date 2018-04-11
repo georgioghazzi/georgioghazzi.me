@@ -2331,11 +2331,7 @@ animation: jiggle 2s  ease-in;
 					border-color: inherit;
 				}
 
-				#main > section.dark a {
-					color: #fff;
-					border-color: inherit;
-				}
-
+			
 					#main > section.dark a:hover {
 						border-bottom-color: rgba(255, 255, 255, 0);
 					}
@@ -2847,7 +2843,22 @@ animation: jiggle 2s  ease-in;
     transform: rotate(360deg);
   }
 }
+/* */
+.round{
+	 font-size: 48px;
+		padding:12px;
+		opacity: 0.9;
+	 color:#fff ;
+	
+	 
+  text-align: center;
+  text-decoration: none;
+ 
+}
 
+.continue {
+  margin-top:70px;
+}
 /* SKILLS */
 
 .SkillsLeft{
