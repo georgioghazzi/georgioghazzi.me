@@ -78,6 +78,7 @@ img {
 }
 .btn-border:hover {
   color: #82BC00;
+
 }
 .btn-border:hover:after {
   height: 100%;
